@@ -1,0 +1,27 @@
+@use "../../assets/styles/" as *;
+.navbar{
+    background-color:$navbar-color;
+    @include display-row;
+    .logo{
+       @extend .navbar; 
+    }
+    .navLinks{
+        @include display-row;
+        gap: 40px;
+        .navLink{
+            text-decoration: none;
+            color: $links-color;
+            font-family: $fonts-family;
+            font-size:18px;
+            font-weight: 700;
+            font-style: normal;
+            padding: 5px 15px;
+            &:hover{
+                color:$link-hover-color;
+                background-color: $link-bg-hover-color;
+                border-radius: 10px;
+            }
+        }
+        
+    }
+}

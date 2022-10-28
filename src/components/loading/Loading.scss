@@ -1,0 +1,9 @@
+@use "../../assets/styles/"as *;
+.loading{
+    background-color:$box-color ;
+    height: 100vh;
+    .animation{
+      @include display-column;
+      align-items: center;
+    }
+}
