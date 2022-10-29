@@ -31,9 +31,24 @@
        
         &>.text{
             color: $text-color;
+            font-family: $fonts-family;
+            font-size:22px;
+            font-weight: 500;
+            font-style: normal;
             &>b{
                 color: $links-color;
+                font-size:21px;
             }
+        }
+        &>a{
+          color: $text-color;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        &:hover{
+          background-color: #000;
         }
       }
       .buttonSide{
@@ -46,10 +61,25 @@
           padding: 10px 10px;
           border: none;
           color: $text-color;
+          font-family: $fonts-family;
+          font-size: 18px;
+          font-weight: 500;
+          font-style: normal;
           &:hover{
             background-color: $text-color;
             color: $links-color;
           }
         }
       }
+}
+@media (min-width: 170px) and (max-width: 321px){
+  .header{
+    .my-masonry-grid_column{
+      .characters{
+        &>.text{
+          font-size: 18px;
+        }
+      }
+    } 
+  }
 }

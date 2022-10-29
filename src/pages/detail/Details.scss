@@ -1,0 +1,27 @@
+@use "../../assets/styles/" as *;
+.detailSide{
+    width: 100vw;
+    height: 100vh;
+    background-color: $box-color ;
+    @include display-column;
+    align-items: center;
+    .informationSide{
+        background-color: $navbar-color;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &>h1,h3,h4{
+            color: $text-color;
+            &>b{
+                color: $links-color;
+            }
+        }
+        &>img{
+            border-radius: 20px;
+            padding: 10px;
+        }
+       
+    }
+}

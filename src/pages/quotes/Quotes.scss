@@ -1,0 +1,71 @@
+@use "../../assets/styles/" as *;
+.quetosSide{
+    background-color: $box-color;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    .quetos{
+        width: 450px;
+        background-color: $navbar-color ;
+        height: 300px;
+        border-radius: 12px;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 30px auto;
+        &>h3{
+            color: $text-color;
+            font-family: $fonts-family;
+            font-size:18px;
+            font-weight: 500;
+            font-style: normal;
+        }
+       
+        &>h2{
+            
+            align-self: flex-end;
+            color: $links-color;
+            font-family: $fonts-family;
+            font-size:22px;
+            font-weight: 700;
+            font-style: normal;
+            margin-right: 10px;
+        }
+    
+    }
+}
+@media (min-width: 768px) and (max-width: 1023.9px){
+.quetosSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+}
+@media (min-width: 320.1px) and (max-width: 767.9px){
+    .quetosSide{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .quetos{
+            width: 350px;
+        }
+    
+    }
+}
+@media (min-width: 170px) and (max-width: 320px){
+    .quetosSide{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .quetos{
+            width: 300px;
+        }
+    
+    }
+}
